@@ -1,4 +1,4 @@
-q<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -284,11 +284,6 @@ q<!DOCTYPE html>
             white-space: nowrap; /* Keeps the content on a single line */
             animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
         }
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        /* The typewriter cursor effect */
         @keyframes blink-caret {
             from, to { border-color: transparent }
             50% { border-color: #e74c3c; }
@@ -318,90 +313,18 @@ q<!DOCTYPE html>
         </div>
         <nav>
             <ul>
-                <li><a href="#ubicacion">Ubicación</a></li>
-                <li><a href="#propuestas">Programación para la Conciencia Vial</a></li>
-                <li><a href="#ejemplos">Señalamientos</a></li>
+                <li><a href="index.html">Inicio</a></li> <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="propuestas.html">Programación para la Conciencia Vial</a></li>
+                <li><a href="senalamientos.html">Señalamientos</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="section" id="ubicacion">
+    <section class="section" id="home-welcome">
         <div class="container">
-            <h2 class="animated-text-typewriter">Nuestra Ubicación</h2>
-            <div class="map-container">
-                <p class="animated-text-pulse">Aquí nos encontramos en CECYTEM Plantel Toluca:</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15065.051284900155!2d-99.73084841284178!3d19.27093360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd884590000001%3A0x9199677b4689bc47!2sCecytem%20Plantel%20Toluca!5e0!3m2!1ses!2smx!4v1749820603331!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Lázaro Cárdenas 240, 50266 San Antonio Buenavista, Méx.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="propuestas">
-        <div class="container">
-            <h2 class="animated-text-pop">Programación para la Conciencia Vial</h2>
-            <div class="content">
-                <div class="proposal-item">
-                    <h2 class="animated-text-slide-up">1. Aplicación de Reporte Ciudadano</h2>
-                    <p class="animated-text-fade-in">Desarrollar una aplicación móvil donde estudiantes y vecinos puedan reportar fácilmente la falta o deterioro de señalizaciones viales, puntos ciegos o zonas de riesgo cerca del plantel. La app podría incluir geolocalización y la posibilidad de adjuntar fotos. Estos reportes serían enviados automáticamente a las autoridades correspondientes.</p>
-                </div>
-                <div class="proposal-item">
-                    <h2 class="animated-text-slide-up">2. Simulador de Conducción Virtual</h2>
-                    <p class="animated-text-fade-in">Crear un simulador interactivo (quizás con Unity o Unreal Engine) que replique las calles alrededor del CECYTEM. Los usuarios "conducirían" virtualmente, y el simulador resaltaría la importancia de las señales, mostraría las consecuencias de no respetarlas y educaría sobre la ubicación ideal de nuevos señalamientos.</p>
-                </div>
-                <div class="proposal-item">
-                    <h2 class="animated-text-slide-up">3. Mapeo de Zonas de Riesgo con Datos</h2>
-                    <p class="animated-text-fade-in">Utilizar la programación para analizar datos de incidentes viales (si están disponibles públicamente o se pueden recabar) y generar mapas interactivos que visualicen las zonas de mayor riesgo alrededor del plantel. Esto permitiría identificar patrones y proponer señalamientos específicos basados en evidencia.</p>
-                </div>
-                <div class="proposal-item">
-                    <h2 class="animated-text-slide-up">4. Campañas Interactivas en Redes</h2>
-                    <p class="animated-text-fade-in">Diseñar juegos o trivias interactivas con JavaScript para plataformas web o redes sociales. Estos juegos educarían de manera lúdica sobre los tipos de señalamientos, su significado y su importancia para la seguridad vial, llegando a un público más amplio.</p>
-                </div>
-                <div class="proposal-item">
-                    <h2 class="animated-text-slide-up">5. Sistema de Monitoreo de Tráfico Inteligente</h2>
-                    <p class="animated-text-fade-in">Investigar la implementación de sensores de tráfico y cámaras conectados a un sistema programado que pueda detectar velocidades excesivas, congestión o cruces peligrosos. Esto podría activar alertas para las autoridades o incluso mostrar mensajes preventivos en pantallas cercanas al plantel.</p>
-                </div>
-                <div class="proposal-item">
-                    <h2 class="animated-text-slide-up">6. Realidad Aumentada para Visualización</h2>
-                    <p class="animated-text-fade-in">Desarrollar una aplicación de Realidad Aumentada (RA) que permita a los usuarios, usando la cámara de su teléfono, "colocar" virtualmente señalamientos propuestos en el entorno real de las calles alrededor del CECYTEM. Esto ayudaría a visualizar el impacto y la ubicación óptima de las señales antes de su instalación física.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="ejemplos">
-        <div class="container">
-            <h2 class="animated-text-typewriter">Ejemplos de Señalamientos Necesarios</h2>
-            <p class="animated-text-pulse">Estos son algunos ejemplos de señalamientos cruciales para la seguridad vial cerca del CECYTEM:</p>
-            <div class="sign-gallery">
-                <div class="sign-item">
-                    <img src="20.jpg" alt="Señal de Límite de Velocidad">
-                    <p class="animated-text-fade-in">**Límite de Velocidad:** Esencial para controlar la velocidad de los vehículos en zonas escolares.</p>
-                </div>
-                <div class="sign-item">
-                    <img src="pao p.jpg" alt="Señal de Paso Peatonal">
-                    <p class="animated-text-fade-in">**Paso Peatonal:** Indispensable para indicar dónde los estudiantes pueden cruzar de forma segura.</p>
-                </div>
-                <div class="sign-item">
-                    <img src="alto.jpg" alt="Señal de Alto">
-                    <p class="animated-text-fade-in">**Alto:** Crucial en intersecciones o salidas del plantel para detener el tráfico.</p>
-                </div>
-                <div class="sign-item">
-                    <img src="curva.jpg" alt="Señal de Curva Peligrosa">
-                    <p class="animated-text-fade-in">**Curva Peligrosa:** Curva peligrosa, redusca la velocidad y tome precauciones.</p>
-                </div>
-                <div class="sign-item">
-                    <img src="no.jpg" alt="Señal de No Estacionarse">
-                    <p class="animated-text-fade-in">**No Estacionarse:** Especialmente importante en las entradas y salidas para evitar obstrucciones.</p>
-                </div>
-                <div class="sign-item">
-                    <img src="zona.jpg" alt="Señal de Zona Escolar">
-                    <p class="animated-text-fade-in">**Zona Escolar:** Señal de advertencia general para que los conductores extremen precauciones.</p>
-                </div>
-                <div class="sign-item">
-                    <img src="doble_s.jpg" alt="Señal de Doble Circulación">
-                    <p class="animated-text-fade-in">**Doble Circulación:** Calle doble sentido, calle estrechas, tome sus precauciones y mantenga el limite de velocidad.</p>
-                </div>
-            </div>
+            <h2 class="animated-text-typewriter">Bienvenido al Portal de Conciencia Vial</h2>
+            <p class="animated-text-fade-in">Explora las diferentes secciones para aprender más sobre seguridad vial, nuestras propuestas de programación y los señalamientos más importantes.</p>
+            <p class="animated-text-pulse">Usa la barra de navegación superior para ir a cada sección.</p>
         </div>
     </section>
 
